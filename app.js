@@ -41,7 +41,7 @@ const handOptions = {
     { label: "ハイカード", points: 0 },
     { label: "ワンペア", points: 0 },
     { label: "ツーペア", points: 0 },
-    { label: "スリーカード", points: 0 },
+    { label: "トリップス", points: 0 },
     { label: "ストレート", points: 2 },
     { label: "フラッシュ", points: 4 },
     { label: "フルハウス", points: 6 },
