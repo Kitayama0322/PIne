@@ -1,0 +1,14 @@
+<svg width="192" height="192" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg">
+  <rect width="192" height="192" rx="32" fill="#c9ef6f"/>
+  <g transform="translate(16 10)">
+    <path
+      d="M80 12C54 38 42 66 42 88c0 18 14 32 32 32 9 0 16-3 22-9 6 6 13 9 22 9 18 0 32-14 32-32 0-22-12-50-38-76-5-5-10-8-16-8-6 0-11 3-16 8Z"
+      fill="#ef4444"
+    />
+    <path
+      d="M96 124c-10 14-18 32-18 48h36c0-16-8-34-18-48Z"
+      fill="#ef4444"
+    />
+  </g>
+</svg>
+

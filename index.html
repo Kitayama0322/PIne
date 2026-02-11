@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0f172a" />
+  <title>チャイニーズパイナップルポーカー 点数メモ</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="icons/icon-192.svg" sizes="192x192" />
+  <link rel="apple-touch-icon" href="icons/icon-192.svg" />
+</head>
+<body>
+  <main class="app-shell">
+    <header class="app-bar">
+      <div class="title">
+        <h1>チャイポ 得点計算</h1>
+      </div>
+      <button id="resetAll" class="ghost-button" type="button" aria-label="リセット">リセット</button>
+    </header>
+
+    <section id="setupView" class="card">
+      <form id="handForm" class="stack">
+        <div class="field">
+          <label for="topSelect">上段 (3枚)</label>
+          <select id="topSelect" name="top" required></select>
+        </div>
+        <div class="field">
+          <label for="middleSelect">中段 (5枚)</label>
+          <select id="middleSelect" name="middle" required></select>
+        </div>
+        <div class="field">
+          <label for="bottomSelect">下段 (5枚)</label>
+          <select id="bottomSelect" name="bottom" required></select>
+        </div>
+
+        <div class="quick-actions">
+          <button class="primary-button" type="submit">決定</button>
+          <button class="danger-button" type="button" id="markBustInput">バースト</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="resultView" class="card hidden" aria-live="polite">
+      <div class="badge-row" id="breakdownRow"></div>
+
+      <div class="total-box">
+        <span>合計</span>
+        <strong id="totalScore">0</strong>
+        <span class="unit" id="totalUnit">pt</span>
+      </div>
+
+      <div class="actions">
+        <button class="ghost-button" type="button" id="editChoices">入力に戻る</button>
+        <button class="primary-button" type="button" id="resetAllBottom">リセット</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast hidden" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
